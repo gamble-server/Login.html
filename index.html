@@ -1,64 +1,41 @@
-<html>
-    <head>
-        <title>Login Form</title>
-        
-    
-    </head>
-    <body bgcolor="cyan">
-    </body>
-    
-    
-    <body>
-    <br /><br /><br /><br /><br /><br /><br /><br /><br />
-        <center>
-            <h1>Login Here</h1>
-            
-            <form action="https://gamble-server.github.io/New-Member-Page/" method="">
-                    
-                    <table>
-                        <tr>
-                            <td>Username:</td>
-                            <td>
-                                <input type="text" name="user">
-                        </tr>
-                        
-                        <tr>
-                            <td>Password:</td>
-                            <td>
-                                <input type="password" name="User_pass">
-                            </td>
-                        </tr>
-                        
-                        <tr>
-                            <td>
-                                <input type="submit" name="submit"
-                                value="Login">
-                            </td>
-                            
-                            <td>
-                                Not Yet A Member?<a href="https://gamble-server.github.io/Register.html/">Register</a>
-                            </td>
-                            
-                        </tr>
-                        
-                        
-                    </table>
-                
-            </form>
-        
-        </center>
-        
-    </body>
-    
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <title>Login Form</title>
+ <link rel="stylesheet" href="style.css">
+ <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+</head>
+<body>
+ <div class="center">
+ <div class="header">
+Login Form</div>
+<form>
+  <input type="text" placeholder="Email or Username">
+  <i class="far fa-envelope"></i>
+  <input id="pswrd" type="password" placeholder="Password">
+  <i class="fas fa-lock" onclick="show()"></i>
+  <input type="submit" value="Sign in">
+  <a href="#">Forgot Password?</a>
+ </form>
+</div>
+<script>
+  function show(){
+   var pswrd = document.getElementById('pswrd');
+   var icon = document.querySelector('.fas');
+   if (pswrd.type === "password") {
+    pswrd.type = "text";
+    pswrd.style.marginTop = "20px";
+    icon.style.color = "#7f2092";
+   }else{
+    pswrd.type = "password";
+    icon.style.color = "grey";
+   }
+  }
+ </script>
+ 
+</body>
 </html>
 
-
-<html>
-    <head>
-        <meta charset="utf-8">
-        <link rel="stylesheet" href="style.css">
-    </head>
-</html>
 
 
 
