@@ -1,106 +1,57 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
-*{
+body{
   margin: 0;
   padding: 0;
-  font-family: 'Poppins',sans-serif;
+  font-family: sans-serif;
+  background: #34495e;
 }
-body{
-  display: flex;
-  height: 100vh;
+.box{
+  width: 300px;
+  padding: 40px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  background: #191919;
   text-align: center;
-  align-items: center;
-  justify-content: center;
-  background: #151515;
 }
-.login-form{
-  position: relative;
-  width: 370px;
-  height: auto;
-  background: #1b1b1b;
-  padding: 40px 35px 60px;
-  box-sizing: border-box;
-  border: 1px solid black;
-  border-radius: 5px;
-  box-shadow: inset 0 0 1px #272727;
+.box h1{
+  color: white;
+  text-transform: uppercase;
+  font-weight: 500;
 }
-.text{
-  font-size: 30px;
-  color: #c7c7c7;
-  font-weight: 600;
-  letter-spacing: 2px;
-}
-form{
-  margin-top: 40px;
-}
-form .field{
-  margin-top: 20px;
-  display: flex;
-}
-.field .fas{
-  height: 50px;
-  width: 60px;
-  color: #868686;
-  font-size: 20px;
-  line-height: 50px;
-  border: 1px solid #444;
-  border-right: none;
-  border-radius: 5px 0 0 5px;
-  background: linear-gradient(#333,#222);
-}
-.field input,form button{
-  height: 50px;
-  width: 100%;
+.box input[type = "text"],.box input[type = "password"]{
+  border:0;
+  background: none;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  border: 2px solid #3498db;
+  padding: 14px 10px;
+  width: 200px;
   outline: none;
-  font-size: 19px;
-  color: #868686;
-  padding: 0 15px;
-  border-radius: 0 5px 5px 0;
-  border: 1px solid #444;
-  caret-color: #339933;
-  background: linear-gradient(#333,#222);
+  color: white;
+  border-radius: 24px;
+  transition: 0.25s;
 }
-input:focus{
-  color: #339933;
-  box-shadow: 0 0 5px rgba(0,255,0,.2),
-              inset 0 0 5px rgba(0,255,0,.1);
-  background: linear-gradient(#333933,#222922);
-  animation: glow .8s ease-out infinite alternate;
+.box input[type = "text"]:focus,.box input[type = "password"]:focus{
+  width: 280px;
+  border-color: #2ecc71;
 }
-@keyframes glow {
-   0%{
-    border-color: #339933;
-    box-shadow: 0 0 5px rgba(0,255,0,.2),
-                inset 0 0 5px rgba(0,0,0,.1);
-  }
-   100%{
-    border-color: #6f6;
-    box-shadow: 0 0 20px rgba(0,255,0,.6),
-                inset 0 0 10px rgba(0,255,0,.4);
-  }
-}
-button{
-  margin-top: 30px;
-  border-radius: 5px!important;
-  font-weight: 600;
-  letter-spacing: 1px;
+.box input[type = "submit"]{
+  border:0;
+  background: none;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  border: 2px solid #2ecc71;
+  padding: 14px 40px;
+  outline: none;
+  color: white;
+  border-radius: 24px;
+  transition: 0.25s;
   cursor: pointer;
 }
-button:hover{
-  color: #339933;
-  border: 1px solid #339933;
-  box-shadow: 0 0 5px rgba(0,255,0,.3),
-              0 0 10px rgba(0,255,0,.2),
-              0 0 15px rgba(0,255,0,.1),
-              0 2px 0 black;
+.box input[type = "submit"]:hover{
+  background: #2ecc71;
 }
-.link{
-  margin-top: 25px;
-  color: #868686;
-}
-.link a{
-  color: #339933;
-  text-decoration: none;
-}
-.link a:hover{
-  text-decoration: underline;
-}
+
